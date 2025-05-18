@@ -4,7 +4,10 @@ module.exports = {
     'es6': true,
     'jest/globals': true,
     'node': true,
-    'cypress/globals': true,
+    'globals': {
+      'cy': true,     // 支持 cy 命令
+      'Cypress': true // 支持 Cypress 对象（比如 Cypress.env()）
+    }
   },
   'extends': [
     'eslint:recommended',
